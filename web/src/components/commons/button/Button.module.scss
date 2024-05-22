@@ -1,0 +1,13 @@
+@use "../../../styles/typescale.scss";
+
+.button {
+    background-color: #212121;
+    height: auto;
+    width: fit-content;
+    padding: 10px 12px 10px 12px;
+    border-radius: 6px;
+    color: #ffffff;
+
+    @extend .lato-bold;
+    @extend .font-size-xxs;
+}

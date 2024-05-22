@@ -1,0 +1,51 @@
+@use "../../styles/typescale.scss";
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h1{
+        @extend .lato-extra-bold;
+        @extend .font-size-lg;
+        align-self: center;
+        margin: 0;
+    }
+    
+    Button{
+        align-self: center;
+    }
+
+}
+
+.project__content {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 26px 21px 26px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        max-width: 408px 
+    }
+
+
+    h2{
+        @extend .lato-bold;
+        @extend .font-size-md;
+    }
+
+    p{
+        @extend .lato-regular;
+        @extend .font-size-xs;
+        
+        align-self: flex-start;
+
+    }
+
+    Button{
+        align-self: flex-start;
+    }
+}

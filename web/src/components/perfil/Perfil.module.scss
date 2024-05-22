@@ -1,0 +1,44 @@
+@use "../../styles/typescale.scss";
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    Button{
+        align-self: center;
+        margin-bottom: 72px;
+    }
+}
+
+.perfil__content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+
+    h1{
+        @extend .lato-extra-bold;
+        @extend .font-size-lg;
+
+        align-self: center;
+    }
+
+    p{
+        @extend .lato-regular;
+        @extend .font-size-xs;
+    }
+}
+
+.description-list {
+    dt {
+        @extend .lato-bold;
+        @extend .font-size-md;
+
+        margin-bottom: 15px
+    }
+
+    dd {
+        @extend .lato-regular;
+        @extend .font-size-xs;
+
+        margin-bottom: 15px;
+    }
+}

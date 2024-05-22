@@ -1,0 +1,8 @@
+# Ignora todas as pastas node_modules
+**/node_modules
+
+# Ignora arquivos de configuração específicos
+# para cada pasta
+web/.env
+plugin/.env
+api/.env

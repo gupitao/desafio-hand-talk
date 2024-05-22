@@ -1,0 +1,41 @@
+@use '../../styles/typescale.scss';
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+
+    h1{
+        align-self: center;
+    }
+
+    .list {
+        align-self: flex-start;
+        list-style: none;
+        padding: 0;
+            
+        li{
+            @extend .lato-regular;
+            @extend .font-size-xs;
+            @extend .line-height-default;
+
+            width: fit-content;
+            margin-bottom: 6px;
+            position: relative;
+            
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 1px;
+                background-color: var(--font-color); 
+            }
+        }
+    }
+
+    Button{
+        align-self: center;
+    }
+}

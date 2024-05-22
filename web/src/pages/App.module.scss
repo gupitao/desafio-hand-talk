@@ -1,0 +1,9 @@
+@import '../styles/typescale.scss';
+
+.app-content{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    width: 100%;
+    padding: 16px;
+}
